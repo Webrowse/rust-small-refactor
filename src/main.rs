@@ -20,7 +20,7 @@ fn main() {
 fn count_words(input: &str) -> usize {
     let mut count = 0;
 
-    for word in input.split(" ") {
+    for word in input.split_whitespace() {
         if word.len() > 0 {
             count += 1;
         }
